@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <h4>Quick Image Editor</h4>
+        </div>
+
+        <div class="display" id="my-img">
+            <img src="banner.jpg" alt="" width="500">
+        </div>
+
+        <div class="final">
+            <button id="reset">Reset</button>
+        </div>
+
+        <div class="controls">
+            <div>
+                <h5>Border</h5>
+                <label for="">Border width</label>
+                <input id="" type="range" name="borderwidth" min="0" max="100" value="0" data-suffix="px">
+
+                <label for="">Border radius</label>
+                <input id="" type="range" name="borderradius" min="0" max="100" value="0" data-suffix="px">
+
+                <label for="">Border type</label>
+                <select name="bordertype" id="">
+                    <option value="none">None</option>
+                    <option value="solid">solid</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="dashed">Dashed</option>
+                    <option value="double">Double</option>
+                    <option value="groove">Groove</option>
+                    <option value="inset">Inset</option>
+                    <option value="outset">Outset</option>
+                    <option value="ridge">Ridge</option>
+                </select>
+
+                <label for="">Border color</label>
+                <input id="" type="color" name="bordercolor" value="#000000">
+            </div>
+            
+            <div>
+                <h5>Filter</h5>
+
+                <label for="">Brightness</label>
+                <input id="" type="range" name="brightness" min="0" max="10" value="1">
+
+                <label for="">contrast</label>
+                <input id="" type="range" name="contrast" min="0" max="10" value="1">
+
+                <label for="">Blur</label>
+                <input id="" type="range" name="blur" min="0" max="100" value="0" data-suffix="px">
+
+                <label for="">grayscale</label>
+                <input id="" type="range" name="grayscale" min="0" max="10" value="0">
+
+                <label for="">hue-rotate</label>
+                <input id="" type="range" name="huerotate" min="0" max="360" value="0" data-suffix="deg">
+
+                <label for="">invert</label>
+                <input id="" type="range" name="invert" min="0" max="100" value="0" data-suffix="%">
+
+                <label for="">opacity</label>
+                <input id="" type="range" name="opacity" min="0" max="100" value="100" data-suffix="%">
+
+                <label for="">saturate</label>
+                <input id="" type="range" name="saturate" min="0" max="10" value="1">
+
+                <label for="">sepia</label>
+                <input id="" type="range" name="sepia" min="0" max="100" value="0" data-suffix="%">
+            </div>
+
+            <!-- <h5>Drop shadow</h5><br>
+
+            <label for="">drop-shadow</label>
+            <input id="" type="range" name="drop-shadow" min="0" max="10" value="1"> -->
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+:root {
+    --borderwidth: 0px;
+    --bordertype: none;
+    --borderradius: 0px;
+    --bordercolor: #000000;
+
+    --brightness: 1;
+    --contrast: 1;
+    --blur: 0px;
+    --grayscale: 0;
+    --huerotate: 0deg;
+    --invert: 0%;
+    --opacity: 0%;
+    --saturate: 1;
+    --sepia: 0%; 
+}
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+img {
+    border-style: var(--bordertype);
+    border-color: var(--bordercolor);
+    border-width: var(--borderwidth);
+    border-radius: var(--borderradius);
+    
+    filter: brightness(var(--brightness)) 
+    contrast(var(--contrast)) 
+    blur(var(--blur))
+    grayscale(var(--grayscale))
+    hue-rotate(var(--huerotate))
+    invert(var(--invert))
+    opacity(var(--opacity))
+    saturate(var(--saturate))
+    sepia(var(--sepia));
+}
+
+.controls input[type='range'] {
+    -webkit-appearance: none;
+    height: 3px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.controls input[type='range']:hover {
+    opacity: 1;
+}
+
+.controls input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #eeff00;
+    cursor: pointer;
+}
+
+.controls input[type='range']::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #eeff00;
+    cursor: pointer;
+}
+
+.controls {
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+}
+input, select {
+    margin: 10px 0px;
+}
+h5{
+    font-size: 25px;
+    margin: 10px 0;
+}
